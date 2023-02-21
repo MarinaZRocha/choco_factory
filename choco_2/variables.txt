@@ -1,0 +1,27 @@
+VAR_GLOBAL
+	iStartButton : BOOL;
+	iEmergencyStop: BOOL;
+	iStopButton : BOOL;
+	iVisionSensor: BOOL;
+	iDiffuseSensor : BOOL;
+	iTesteliga : BOOL;
+	oEmitter : BOOL ;
+	oBeltConveyor4m: BOOL;
+	oPivotArmSorter1Turn : BOOL;
+	oBeltConveyor2m1 : BOOL;
+	oBeltConveyor2m2 : BOOL;
+	oPusher : BOOL;
+	oRemover1 : BOOL;
+	oRemover2 : BOOL;
+END_VAR
+
+PROGRAM PLC_PRG
+VAR
+	LIGA : BOOL;
+	EMERG : BOOL;
+	ESTER : BOOL := FALSE;
+	COLOR_SENSOR : DINT;
+	ARM : BOOL;
+	AUX : BOOL;
+	TON_0: TON;
+END_VAR
